@@ -1,0 +1,10 @@
+{
+  "name": "sf-ts-comments-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js.js",
+  "scripts": {
+    "build": "npx tsc"
+  },
+  "author": "Olesya"
+}

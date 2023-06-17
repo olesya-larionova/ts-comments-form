@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="./style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+        </div>
+    </header>
+    <main class="main">
+        <div class="aside">
+        </div>
+        <div class="main-section">
+            <div class="section-block1">
+                <div class="block1 b1"></div>
+                <div class="block1 b2"></div>
+                <div class="block1 b3"></div>
+                <div class="block1 b4"></div>
+                <div class="block1 b5"></div>
+                <div class="block1 b6"></div>
+                <div class="block1 b7"></div>
+                <div class="block1 b8"></div>
+            </div>
+            <div class="section-block2">
+                <div class="block2"></div>
+                <hr class="line">
+            </div>
+            
+            <div class = "commentblock">
+                
+                <div class="section-block3">
+                    <form class="form">
+                        <div class="comment-number">
+                            <p class="comments-text">Комментарии</p>
+                            <div class="total-number"></div>
+                        </div>
+                        
+                        <div class="d-d-list">
+                            <select class="select">
+                                <option value="0">По дате</option>
+                                <option value="1">По количеству оценок</option>
+                                <option value="2">По актуальности</option>
+                                <option value="3">По количеству ответов</option>
+                            </select>
+                            <div class="arrow">
+                                <img class="arrow-down" src="./images/Arrow 1.svg">
+                                <img class="arrow-up" src="./images/Arrow 2.svg">
+                            </div>
+                        </div>
+                        <div class="favorite">
+                            <a href="javascript:void(0);" class="favorites">Избранное</a>
+                            <div class="img-favorite">
+                                <img src="./images/favorite.svg">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="comment-form-id"></div>
+                <div id="comments-id"></div>
+            </div>
+        </div>
+    </main>
+    
+    <template id="comment-display-template">
+        <div class = "comment" data-id = "0">
+            <div class = "comment-group">
+                <div class = "comment-avatar">
+                    <img>
+                </div>
+                <div class = "comment-body">
+                    <div class = "comment-head">
+                        <div class = "comment-username">
+                        </div>
+                        <div class = "comment-opponent">
+                        </div>
+                        <div class = "comment-time">
+                        </div>
+                    </div>
+                    <div class = "comment-text">
+                    </div>
+                    <div class = "comment-footer">
+                        <div class = "comment-response">
+                            <img src="./images/reply-arrow.svg">
+                            <a href="javascript:void(0);" class="comment-reply">Ответить</a>
+                        </div>
+                        <div class = "comment-like">
+                            <img class="heart">
+                            <a href="javascript:void(0);" class="add-favorite">В избранное</a>
+                        </div>
+                        <div class = "comment-score">
+                            <div class="score-minus"> - </div>
+                            <div class="score-number"> 6 </div>
+                            <div class="score-plus"> + </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "commentresponses">
+            </div>
+        </div>
+    </template>
+
+    <template id="comment-form-template">
+        <div class="comment-form">
+            <div class = "comment-avatar">
+                <img>
+            </div>
+            <div class = "comment-body">
+                <div class = "comment-head">
+                    <div class = "comment-username">
+                    </div>
+                    <div class = "comment-length">
+                    </div>
+                </div>
+                <div class = "comment-text">
+                    <input type="text" class="comment-input" placeholder="Введите текст сообщения..."></input>
+                    <button class="comment-btn">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+</body>
+<script src="./js.js"></script>
+</html>
