@@ -1,22 +1,27 @@
 {
-  "name": "sf-ts-final-task",
+  "name": "sf-ts-comments-form",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Typescript studying project",
+  "main": "js.js",
   "scripts": {
-    "start": "http-server -p 5566",
     "build": "npx tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dmitrykurmanov/SF-TS-Final-Task.git"
+    "url": "git+https://github.com/olesya-larionova/ts-comments-form.git"
   },
-  "author": "",
+  "license": "ISC",
+  "author": "Olesya",
   "bugs": {
-    "url": "https://github.com/dmitrykurmanov/SF-TS-Final-Task/issues"
+    "url": "https://github.com/olesya-larionova/ts-comments-form/issues"
   },
-  "homepage": "https://github.com/dmitrykurmanov/SF-TS-Final-Task#readme",
+  "homepage": "https://github.com/olesya-larionova/ts-comments-form#readme",
   "devDependencies": {
-    "http-server": "^13.1.0"
-  }
+    "typescript": "^4.3.4"
+  },
+  "keywords": [
+    "typescript",
+    "courses",
+    "comment_form"
+  ]
 }
